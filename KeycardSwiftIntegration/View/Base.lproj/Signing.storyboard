@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yfg-8b-BLf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signing Controller-->
+        <scene sceneID="Z3i-Lo-XdY">
+            <objects>
+                <viewController id="yfg-8b-BLf" customClass="SigningController" customModule="KeycardSwiftIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hUn-WQ-wxW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-KF-Bho">
+                                <rect key="frame" x="115" y="267.5" width="145" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="JOy-DX-H9D"/>
+                                    <constraint firstAttribute="height" constant="45" id="lBb-Rg-PWL"/>
+                                </constraints>
+                                <state key="normal" title="Sign transaction">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signButtonPressed:" destination="yfg-8b-BLf" eventType="touchUpInside" id="HyD-pd-fDb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6K-bB-soV">
+                                <rect key="frame" x="34" y="40" width="325" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hash" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J75-qf-04f">
+                                <rect key="frame" x="34" y="107" width="47.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FY9-uJ-VRv">
+                                <rect key="frame" x="34" y="139" width="307" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J75-qf-04f" firstAttribute="top" secondItem="e6K-bB-soV" secondAttribute="bottom" constant="50" id="FWz-OR-Dmh"/>
+                            <constraint firstItem="J75-qf-04f" firstAttribute="leading" secondItem="nFh-dy-rcc" secondAttribute="leading" constant="34" id="Jnw-tg-lOr"/>
+                            <constraint firstItem="2ia-KF-Bho" firstAttribute="centerX" secondItem="hUn-WQ-wxW" secondAttribute="centerX" id="Sep-1T-Qvu"/>
+                            <constraint firstItem="nFh-dy-rcc" firstAttribute="trailing" secondItem="e6K-bB-soV" secondAttribute="trailing" constant="16" id="VXB-4E-a3Z"/>
+                            <constraint firstItem="e6K-bB-soV" firstAttribute="leading" secondItem="nFh-dy-rcc" secondAttribute="leading" constant="34" id="XuP-gn-KHZ"/>
+                            <constraint firstItem="2ia-KF-Bho" firstAttribute="top" secondItem="FY9-uJ-VRv" secondAttribute="bottom" constant="94.5" id="a3y-eE-7f2"/>
+                            <constraint firstItem="e6K-bB-soV" firstAttribute="top" secondItem="nFh-dy-rcc" secondAttribute="top" constant="40" id="c8Q-k3-I5d"/>
+                            <constraint firstItem="FY9-uJ-VRv" firstAttribute="top" secondItem="J75-qf-04f" secondAttribute="bottom" constant="8" id="d19-xP-K7C"/>
+                            <constraint firstItem="FY9-uJ-VRv" firstAttribute="leading" secondItem="nFh-dy-rcc" secondAttribute="leading" constant="34" id="dmI-1F-jA6"/>
+                            <constraint firstItem="nFh-dy-rcc" firstAttribute="trailing" secondItem="FY9-uJ-VRv" secondAttribute="trailing" constant="34" id="wNk-Cw-bMW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nFh-dy-rcc"/>
+                    </view>
+                    <connections>
+                        <outlet property="descLabel" destination="e6K-bB-soV" id="Gbv-ru-M79"/>
+                        <outlet property="hashTF" destination="FY9-uJ-VRv" id="yT2-qV-Tbf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuz-ze-okV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="144.3778110944528"/>
+        </scene>
+    </scenes>
+</document>

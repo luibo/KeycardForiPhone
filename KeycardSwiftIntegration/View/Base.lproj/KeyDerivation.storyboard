@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8YA-di-TPd">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Key Derivation Controller-->
+        <scene sceneID="8j0-QR-IwZ">
+            <objects>
+                <viewController id="8YA-di-TPd" customClass="KeyDerivationController" customModule="KeycardSwiftIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aKa-f9-kch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key derivation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckv-Xr-SgO">
+                                <rect key="frame" x="35" y="20" width="305" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="current path" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBw-cG-7vL">
+                                <rect key="frame" x="53.5" y="67" width="268" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="ONX-4E-3Ep"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdF-nk-9jc">
+                                <rect key="frame" x="115" y="235" width="145" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="29Q-DJ-egJ"/>
+                                    <constraint firstAttribute="width" constant="145" id="fjm-fY-4RY"/>
+                                </constraints>
+                                <state key="normal" title="Derive key">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deriveButtonPressed:" destination="8YA-di-TPd" eventType="touchUpInside" id="E2i-ae-BSp"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmc-Af-vet">
+                                <rect key="frame" x="41" y="116.5" width="293" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create new account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg3-ug-iX1">
+                                        <rect key="frame" x="100" y="14" width="130" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JE1-N3-lbd">
+                                        <rect key="frame" x="62" y="7" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-6A-4d4">
+                                                <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="radioButtonPressed:" destination="8YA-di-TPd" eventType="touchUpInside" id="k3j-BS-1pp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="L7O-Hm-Jha"/>
+                                    <constraint firstAttribute="height" constant="45" id="Xbz-0Z-QyF"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coin type" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K5x-rs-7Ap">
+                                <rect key="frame" x="76" y="178" width="223" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="wsN-iG-m6l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8YA-di-TPd" id="dy0-KZ-yyZ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ckv-Xr-SgO" firstAttribute="top" secondItem="hen-xy-SSo" secondAttribute="top" constant="20" id="Cdh-L2-odE"/>
+                            <constraint firstItem="Bmc-Af-vet" firstAttribute="top" secondItem="NBw-cG-7vL" secondAttribute="bottom" constant="30" id="DV4-LW-aLB"/>
+                            <constraint firstItem="NBw-cG-7vL" firstAttribute="top" secondItem="Ckv-Xr-SgO" secondAttribute="bottom" constant="30" id="HiF-b5-cYq"/>
+                            <constraint firstItem="IdF-nk-9jc" firstAttribute="centerX" secondItem="aKa-f9-kch" secondAttribute="centerX" id="I2P-eD-Ixv"/>
+                            <constraint firstItem="NBw-cG-7vL" firstAttribute="centerX" secondItem="aKa-f9-kch" secondAttribute="centerX" id="KAV-wl-ojL"/>
+                            <constraint firstItem="Bmc-Af-vet" firstAttribute="centerX" secondItem="aKa-f9-kch" secondAttribute="centerX" id="U39-FS-b1s"/>
+                            <constraint firstItem="IdF-nk-9jc" firstAttribute="top" secondItem="K5x-rs-7Ap" secondAttribute="bottom" constant="23" id="Zf6-Lp-nqk"/>
+                            <constraint firstItem="Ckv-Xr-SgO" firstAttribute="leading" secondItem="hen-xy-SSo" secondAttribute="leading" constant="35" id="cic-yt-EGd"/>
+                            <constraint firstItem="hen-xy-SSo" firstAttribute="trailing" secondItem="Ckv-Xr-SgO" secondAttribute="trailing" constant="35" id="hXf-4w-l6C"/>
+                            <constraint firstItem="K5x-rs-7Ap" firstAttribute="top" secondItem="Bmc-Af-vet" secondAttribute="bottom" constant="16.5" id="hhn-Ew-hkJ"/>
+                            <constraint firstItem="K5x-rs-7Ap" firstAttribute="centerX" secondItem="aKa-f9-kch" secondAttribute="centerX" id="igs-Rx-qmz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hen-xy-SSo"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountRadioButton" destination="T0L-6A-4d4" id="V7e-Yl-gsv"/>
+                        <outlet property="buttonContainer1" destination="JE1-N3-lbd" id="Nrs-bw-xuz"/>
+                        <outlet property="coinTypeTF" destination="K5x-rs-7Ap" id="CEX-2U-VuE"/>
+                        <outlet property="currentPath" destination="NBw-cG-7vL" id="4gg-Fr-riY"/>
+                        <outlet property="descriptionLabel" destination="Ckv-Xr-SgO" id="bKB-UI-qXL"/>
+                        <outlet property="radioContainer" destination="Bmc-Af-vet" id="MBS-G2-h9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTk-Qe-kJP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="84.107946026986511"/>
+        </scene>
+    </scenes>
+</document>

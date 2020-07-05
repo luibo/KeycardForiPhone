@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9033B0923EB117D001CCD78 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9033B0823EB117C001CCD78 /* NetworkManager.swift */; };
+		C91C272423D3421200C6A643 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C272323D3421200C6A643 /* Globals.swift */; };
+		C91C272623D38DD600C6A643 /* PinlessPathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C272523D38DD600C6A643 /* PinlessPathController.swift */; };
+		C928BFB023A37621001B61E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C928BFAF23A37621001B61E4 /* Default-568h@2x.png */; };
+		C95E040223A164D600AE74AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E040123A164D600AE74AF /* AppDelegate.swift */; };
+		C95E040423A164D600AE74AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E040323A164D600AE74AF /* SceneDelegate.swift */; };
+		C95E040623A164D600AE74AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E040523A164D600AE74AF /* ViewController.swift */; };
+		C95E040923A164D600AE74AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95E040723A164D600AE74AF /* Main.storyboard */; };
+		C95E040B23A164DA00AE74AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95E040A23A164DA00AE74AF /* Assets.xcassets */; };
+		C95E040E23A164DA00AE74AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95E040C23A164DA00AE74AF /* LaunchScreen.storyboard */; };
+		C96EBC7823DE1E1200707A84 /* KeyExportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96EBC7723DE1E1200707A84 /* KeyExportController.swift */; };
+		C9A1F4C823DCBC7B008F684E /* KeyDerivation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A1F4C623DCBC7B008F684E /* KeyDerivation.storyboard */; };
+		C9A1F4CA23DCBD52008F684E /* KeyDerivationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A1F4C923DCBD52008F684E /* KeyDerivationController.swift */; };
+		C9A1F4CD23DDFA63008F684E /* Signing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A1F4CB23DDFA62008F684E /* Signing.storyboard */; };
+		C9A1F4CF23DDFAB5008F684E /* SigningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A1F4CE23DDFAB5008F684E /* SigningController.swift */; };
+		C9A1F4D123DE0A3C008F684E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A1F4D023DE0A3C008F684E /* Transaction.swift */; };
+		C9AE573823DF60AE00EB8DFF /* DerivationAndSigning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AE573623DF60AE00EB8DFF /* DerivationAndSigning.storyboard */; };
+		C9AE573A23DF610200EB8DFF /* DerivationAndSigningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE573923DF610200EB8DFF /* DerivationAndSigningController.swift */; };
+		C9AE573D23DF9A0E00EB8DFF /* PinlessSign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AE573B23DF9A0E00EB8DFF /* PinlessSign.storyboard */; };
+		C9AE573F23DF9B3600EB8DFF /* PinlessSignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE573E23DF9B3600EB8DFF /* PinlessSignController.swift */; };
+		C9B87BC923FD3CB1004BFA85 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B87BBC23FD3BCF004BFA85 /* Alamofire.framework */; };
+		C9B87BCA23FD3CB1004BFA85 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9B87BBC23FD3BCF004BFA85 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9B87BE62404593D004BFA85 /* SelectWalletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B87BE52404593D004BFA85 /* SelectWalletController.swift */; };
+		C9B87BE824045C32004BFA85 /* WalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B87BE724045C32004BFA85 /* WalletCell.swift */; };
+		C9C8605324AD245400434314 /* Keycard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DD66CF24AD011500F1691B /* Keycard.framework */; };
+		C9C8605424AD245400434314 /* Keycard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9DD66CF24AD011500F1691B /* Keycard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9C8605624AD2B3D00434314 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8605524AD2B3C00434314 /* CryptoSwift.framework */; };
+		C9C8605724AD2B3D00434314 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8605524AD2B3C00434314 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9C8605924AD2B4800434314 /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8605824AD2B4700434314 /* secp256k1.framework */; };
+		C9C8605A24AD2B4800434314 /* secp256k1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9C8605824AD2B4700434314 /* secp256k1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9C9466E23C3A3820005F7DF /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9466D23C3A3820005F7DF /* InfoController.swift */; };
+		C9C9467023C3A38E0005F7DF /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9466F23C3A38E0005F7DF /* AuthenticationController.swift */; };
+		C9C9467623CA39AE0005F7DF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9467523CA39AE0005F7DF /* TabBarController.swift */; };
+		C9C9467923CB8CAC0005F7DF /* WalletCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C9467723CB8CAB0005F7DF /* WalletCreation.storyboard */; };
+		C9C9467B23CB953D0005F7DF /* WalletCreationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9467A23CB953D0005F7DF /* WalletCreationController.swift */; };
+		C9C9467E23CB9D820005F7DF /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C9467C23CB9D820005F7DF /* Settings.storyboard */; };
+		C9C9468023CB9F630005F7DF /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9467F23CB9F630005F7DF /* SettingsController.swift */; };
+		C9DD665524ACF8FF00F1691B /* Keycard in Resources */ = {isa = PBXBuildFile; fileRef = C9DD665424ACF8FF00F1691B /* Keycard */; };
+		C9E262BA23D796DD001D7021 /* CreateBIP39Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E262B923D796DD001D7021 /* CreateBIP39Controller.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9B87BBB23FD3BCF004BFA85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		C9B87BBD23FD3BCF004BFA85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		C9B87BBF23FD3BCF004BFA85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		C9B87BC123FD3BCF004BFA85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		C9B87BC323FD3BCF004BFA85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		C9B87BC523FD3BCF004BFA85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		C9B87BC723FD3BCF004BFA85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C928BFA523A37358001B61E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9C8605724AD2B3D00434314 /* CryptoSwift.framework in Embed Frameworks */,
+				C9C8605424AD245400434314 /* Keycard.framework in Embed Frameworks */,
+				C9B87BCA23FD3CB1004BFA85 /* Alamofire.framework in Embed Frameworks */,
+				C9C8605A24AD2B4800434314 /* secp256k1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C9033B0823EB117C001CCD78 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C91C272323D3421200C6A643 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		C91C272523D38DD600C6A643 /* PinlessPathController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinlessPathController.swift; sourceTree = "<group>"; };
+		C928BFAF23A37621001B61E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C928BFB123A385D4001B61E4 /* KeycardSwiftIntegration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeycardSwiftIntegration.entitlements; sourceTree = "<group>"; };
+		C95E03FE23A164D600AE74AF /* KeycardSwiftIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeycardSwiftIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95E040123A164D600AE74AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C95E040323A164D600AE74AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C95E040523A164D600AE74AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		C95E040823A164D600AE74AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C95E040A23A164DA00AE74AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C95E040D23A164DA00AE74AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C95E040F23A164DA00AE74AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96EBC7723DE1E1200707A84 /* KeyExportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyExportController.swift; sourceTree = "<group>"; };
+		C9A1F4C723DCBC7B008F684E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KeyDerivation.storyboard; sourceTree = "<group>"; };
+		C9A1F4C923DCBD52008F684E /* KeyDerivationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivationController.swift; sourceTree = "<group>"; };
+		C9A1F4CC23DDFA62008F684E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Signing.storyboard; sourceTree = "<group>"; };
+		C9A1F4CE23DDFAB5008F684E /* SigningController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningController.swift; sourceTree = "<group>"; };
+		C9A1F4D023DE0A3C008F684E /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		C9AE573723DF60AE00EB8DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DerivationAndSigning.storyboard; sourceTree = "<group>"; };
+		C9AE573923DF610200EB8DFF /* DerivationAndSigningController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivationAndSigningController.swift; sourceTree = "<group>"; };
+		C9AE573C23DF9A0E00EB8DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PinlessSign.storyboard; sourceTree = "<group>"; };
+		C9AE573E23DF9B3600EB8DFF /* PinlessSignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinlessSignController.swift; sourceTree = "<group>"; };
+		C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		C9B87BE52404593D004BFA85 /* SelectWalletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWalletController.swift; sourceTree = "<group>"; };
+		C9B87BE724045C32004BFA85 /* WalletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCell.swift; sourceTree = "<group>"; };
+		C9C8605524AD2B3C00434314 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Frameworks/CryptoSwift.framework; sourceTree = "<group>"; };
+		C9C8605824AD2B4700434314 /* secp256k1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = secp256k1.framework; path = Frameworks/secp256k1.framework; sourceTree = "<group>"; };
+		C9C9466D23C3A3820005F7DF /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		C9C9466F23C3A38E0005F7DF /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		C9C9467523CA39AE0005F7DF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C9C9467823CB8CAB0005F7DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WalletCreation.storyboard; sourceTree = "<group>"; };
+		C9C9467A23CB953D0005F7DF /* WalletCreationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCreationController.swift; sourceTree = "<group>"; };
+		C9C9467D23CB9D820005F7DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		C9C9467F23CB9F630005F7DF /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		C9DD665424ACF8FF00F1691B /* Keycard */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Keycard; path = ../../Downloads/Keycard; sourceTree = "<group>"; };
+		C9DD66CF24AD011500F1691B /* Keycard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Keycard.framework; path = Frameworks/Keycard.framework; sourceTree = "<group>"; };
+		C9E262B923D796DD001D7021 /* CreateBIP39Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBIP39Controller.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C95E03FB23A164D600AE74AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C8605624AD2B3D00434314 /* CryptoSwift.framework in Frameworks */,
+				C9C8605324AD245400434314 /* Keycard.framework in Frameworks */,
+				C9B87BC923FD3CB1004BFA85 /* Alamofire.framework in Frameworks */,
+				C9C8605924AD2B4800434314 /* secp256k1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C928BF8C23A371A4001B61E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C8605824AD2B4700434314 /* secp256k1.framework */,
+				C9C8605524AD2B3C00434314 /* CryptoSwift.framework */,
+				C9DD665424ACF8FF00F1691B /* Keycard */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C928BFAC23A373F9001B61E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C95E040723A164D600AE74AF /* Main.storyboard */,
+				C95E040C23A164DA00AE74AF /* LaunchScreen.storyboard */,
+				C9C9467723CB8CAB0005F7DF /* WalletCreation.storyboard */,
+				C9C9467C23CB9D820005F7DF /* Settings.storyboard */,
+				C9A1F4C623DCBC7B008F684E /* KeyDerivation.storyboard */,
+				C9A1F4CB23DDFA62008F684E /* Signing.storyboard */,
+				C9AE573623DF60AE00EB8DFF /* DerivationAndSigning.storyboard */,
+				C9AE573B23DF9A0E00EB8DFF /* PinlessSign.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C928BFAD23A37406001B61E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C95E040523A164D600AE74AF /* ViewController.swift */,
+				C9C9466D23C3A3820005F7DF /* InfoController.swift */,
+				C9C9466F23C3A38E0005F7DF /* AuthenticationController.swift */,
+				C9C9467523CA39AE0005F7DF /* TabBarController.swift */,
+				C9C9467A23CB953D0005F7DF /* WalletCreationController.swift */,
+				C9C9467F23CB9F630005F7DF /* SettingsController.swift */,
+				C91C272523D38DD600C6A643 /* PinlessPathController.swift */,
+				C9E262B923D796DD001D7021 /* CreateBIP39Controller.swift */,
+				C9A1F4C923DCBD52008F684E /* KeyDerivationController.swift */,
+				C9A1F4CE23DDFAB5008F684E /* SigningController.swift */,
+				C96EBC7723DE1E1200707A84 /* KeyExportController.swift */,
+				C9AE573923DF610200EB8DFF /* DerivationAndSigningController.swift */,
+				C9AE573E23DF9B3600EB8DFF /* PinlessSignController.swift */,
+				C9B87BE52404593D004BFA85 /* SelectWalletController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C928BFAE23A37491001B61E4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C95E040123A164D600AE74AF /* AppDelegate.swift */,
+				C95E040323A164D600AE74AF /* SceneDelegate.swift */,
+				C95E040A23A164DA00AE74AF /* Assets.xcassets */,
+				C95E040F23A164DA00AE74AF /* Info.plist */,
+				C91C272323D3421200C6A643 /* Globals.swift */,
+				C9033B0823EB117C001CCD78 /* NetworkManager.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		C95E03F523A164D500AE74AF = {
+			isa = PBXGroup;
+			children = (
+				C9DD66CF24AD011500F1691B /* Keycard.framework */,
+				C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */,
+				C928BFAF23A37621001B61E4 /* Default-568h@2x.png */,
+				C95E040023A164D600AE74AF /* KeycardSwiftIntegration */,
+				C95E03FF23A164D600AE74AF /* Products */,
+				C928BF8C23A371A4001B61E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C95E03FF23A164D600AE74AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C95E03FE23A164D600AE74AF /* KeycardSwiftIntegration.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C95E040023A164D600AE74AF /* KeycardSwiftIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				C928BFB123A385D4001B61E4 /* KeycardSwiftIntegration.entitlements */,
+				C9A1F4D223DE0A43008F684E /* Model */,
+				C928BFAC23A373F9001B61E4 /* View */,
+				C928BFAD23A37406001B61E4 /* Controller */,
+				C928BFAE23A37491001B61E4 /* Others */,
+				C9B87BE924045C3C004BFA85 /* Custom components */,
+			);
+			path = KeycardSwiftIntegration;
+			sourceTree = "<group>";
+		};
+		C9A1F4D223DE0A43008F684E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9A1F4D023DE0A3C008F684E /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9B87BB223FD3BCE004BFA85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9B87BBC23FD3BCF004BFA85 /* Alamofire.framework */,
+				C9B87BBE23FD3BCF004BFA85 /* Alamofire iOS Tests.xctest */,
+				C9B87BC023FD3BCF004BFA85 /* Alamofire.framework */,
+				C9B87BC223FD3BCF004BFA85 /* Alamofire macOS Tests.xctest */,
+				C9B87BC423FD3BCF004BFA85 /* Alamofire.framework */,
+				C9B87BC623FD3BCF004BFA85 /* Alamofire tvOS Tests.xctest */,
+				C9B87BC823FD3BCF004BFA85 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9B87BE924045C3C004BFA85 /* Custom components */ = {
+			isa = PBXGroup;
+			children = (
+				C9B87BE724045C32004BFA85 /* WalletCell.swift */,
+			);
+			path = "Custom components";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C95E03FD23A164D600AE74AF /* KeycardSwiftIntegration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95E041223A164DA00AE74AF /* Build configuration list for PBXNativeTarget "KeycardSwiftIntegration" */;
+			buildPhases = (
+				C95E03FA23A164D600AE74AF /* Sources */,
+				C95E03FB23A164D600AE74AF /* Frameworks */,
+				C95E03FC23A164D600AE74AF /* Resources */,
+				C928BFA523A37358001B61E4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeycardSwiftIntegration;
+			productName = KeycardSwiftIntegration;
+			productReference = C95E03FE23A164D600AE74AF /* KeycardSwiftIntegration.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C95E03F623A164D500AE74AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Luigi Borchia";
+				TargetAttributes = {
+					C95E03FD23A164D600AE74AF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C95E03F923A164D500AE74AF /* Build configuration list for PBXProject "KeycardSwiftIntegration" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C95E03F523A164D500AE74AF;
+			productRefGroup = C95E03FF23A164D600AE74AF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C9B87BB223FD3BCE004BFA85 /* Products */;
+					ProjectRef = C9B87BB123FD3BCE004BFA85 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C95E03FD23A164D600AE74AF /* KeycardSwiftIntegration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C9B87BBC23FD3BCF004BFA85 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C9B87BBB23FD3BCF004BFA85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9B87BBE23FD3BCF004BFA85 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = C9B87BBD23FD3BCF004BFA85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9B87BC023FD3BCF004BFA85 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C9B87BBF23FD3BCF004BFA85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9B87BC223FD3BCF004BFA85 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = C9B87BC123FD3BCF004BFA85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9B87BC423FD3BCF004BFA85 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C9B87BC323FD3BCF004BFA85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9B87BC623FD3BCF004BFA85 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = C9B87BC523FD3BCF004BFA85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9B87BC823FD3BCF004BFA85 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C9B87BC723FD3BCF004BFA85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C95E03FC23A164D600AE74AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A1F4CD23DDFA63008F684E /* Signing.storyboard in Resources */,
+				C95E040E23A164DA00AE74AF /* LaunchScreen.storyboard in Resources */,
+				C928BFB023A37621001B61E4 /* Default-568h@2x.png in Resources */,
+				C9AE573823DF60AE00EB8DFF /* DerivationAndSigning.storyboard in Resources */,
+				C9C9467923CB8CAC0005F7DF /* WalletCreation.storyboard in Resources */,
+				C9C9467E23CB9D820005F7DF /* Settings.storyboard in Resources */,
+				C9A1F4C823DCBC7B008F684E /* KeyDerivation.storyboard in Resources */,
+				C95E040B23A164DA00AE74AF /* Assets.xcassets in Resources */,
+				C95E040923A164D600AE74AF /* Main.storyboard in Resources */,
+				C9AE573D23DF9A0E00EB8DFF /* PinlessSign.storyboard in Resources */,
+				C9DD665524ACF8FF00F1691B /* Keycard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C95E03FA23A164D600AE74AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9033B0923EB117D001CCD78 /* NetworkManager.swift in Sources */,
+				C9C9468023CB9F630005F7DF /* SettingsController.swift in Sources */,
+				C9AE573F23DF9B3600EB8DFF /* PinlessSignController.swift in Sources */,
+				C9B87BE62404593D004BFA85 /* SelectWalletController.swift in Sources */,
+				C95E040623A164D600AE74AF /* ViewController.swift in Sources */,
+				C96EBC7823DE1E1200707A84 /* KeyExportController.swift in Sources */,
+				C95E040223A164D600AE74AF /* AppDelegate.swift in Sources */,
+				C9C9467B23CB953D0005F7DF /* WalletCreationController.swift in Sources */,
+				C9E262BA23D796DD001D7021 /* CreateBIP39Controller.swift in Sources */,
+				C95E040423A164D600AE74AF /* SceneDelegate.swift in Sources */,
+				C9C9467623CA39AE0005F7DF /* TabBarController.swift in Sources */,
+				C9C9467023C3A38E0005F7DF /* AuthenticationController.swift in Sources */,
+				C9B87BE824045C32004BFA85 /* WalletCell.swift in Sources */,
+				C9A1F4CF23DDFAB5008F684E /* SigningController.swift in Sources */,
+				C9AE573A23DF610200EB8DFF /* DerivationAndSigningController.swift in Sources */,
+				C91C272423D3421200C6A643 /* Globals.swift in Sources */,
+				C9A1F4CA23DCBD52008F684E /* KeyDerivationController.swift in Sources */,
+				C91C272623D38DD600C6A643 /* PinlessPathController.swift in Sources */,
+				C9C9466E23C3A3820005F7DF /* InfoController.swift in Sources */,
+				C9A1F4D123DE0A3C008F684E /* Transaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C95E040723A164D600AE74AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E040823A164D600AE74AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C95E040C23A164DA00AE74AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95E040D23A164DA00AE74AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C9A1F4C623DCBC7B008F684E /* KeyDerivation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9A1F4C723DCBC7B008F684E /* Base */,
+			);
+			name = KeyDerivation.storyboard;
+			sourceTree = "<group>";
+		};
+		C9A1F4CB23DDFA62008F684E /* Signing.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9A1F4CC23DDFA62008F684E /* Base */,
+			);
+			name = Signing.storyboard;
+			sourceTree = "<group>";
+		};
+		C9AE573623DF60AE00EB8DFF /* DerivationAndSigning.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AE573723DF60AE00EB8DFF /* Base */,
+			);
+			name = DerivationAndSigning.storyboard;
+			sourceTree = "<group>";
+		};
+		C9AE573B23DF9A0E00EB8DFF /* PinlessSign.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9AE573C23DF9A0E00EB8DFF /* Base */,
+			);
+			name = PinlessSign.storyboard;
+			sourceTree = "<group>";
+		};
+		C9C9467723CB8CAB0005F7DF /* WalletCreation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C9467823CB8CAB0005F7DF /* Base */,
+			);
+			name = WalletCreation.storyboard;
+			sourceTree = "<group>";
+		};
+		C9C9467C23CB9D820005F7DF /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C9467D23CB9D820005F7DF /* Base */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C95E041023A164DA00AE74AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Debug;
+		};
+		C95E041123A164DA00AE74AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Release;
+		};
+		C95E041323A164DA00AE74AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_ENTITLEMENTS = KeycardSwiftIntegration/KeycardSwiftIntegration.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U7GHX7KXV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/KeycardSwiftIntegration/Others/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/secp256k1.framework",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = lb.KeycardSwiftIntegration;
+				PRODUCT_NAME = KeycardSwiftIntegration;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C95E041423A164DA00AE74AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_ENTITLEMENTS = KeycardSwiftIntegration/KeycardSwiftIntegration.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3U7GHX7KXV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/KeycardSwiftIntegration/Others/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/secp256k1.framework",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = lb.KeycardSwiftIntegration;
+				PRODUCT_NAME = KeycardSwiftIntegration;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C95E03F923A164D500AE74AF /* Build configuration list for PBXProject "KeycardSwiftIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95E041023A164DA00AE74AF /* Debug */,
+				C95E041123A164DA00AE74AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C95E041223A164DA00AE74AF /* Build configuration list for PBXNativeTarget "KeycardSwiftIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95E041323A164DA00AE74AF /* Debug */,
+				C95E041423A164DA00AE74AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C95E03F623A164D500AE74AF /* Project object */;
+}

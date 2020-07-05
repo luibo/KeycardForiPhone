@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDv-Cq-lT5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet Creation Controller-->
+        <scene sceneID="561-ak-k5P">
+            <objects>
+                <tableViewController id="sDv-Cq-lT5" customClass="WalletCreationController" customModule="KeycardSwiftIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="10" estimatedSectionFooterHeight="10" id="p6B-cn-VgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection id="aZb-Ce-oga">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="wWx-GP-bqs">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wWx-GP-bqs" id="T9i-rg-y35">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="textLabel.text" value="Create BIP39 phrase"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="doM-WY-Jir" kind="show" id="Tpp-uB-Q5l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="qmA-Qa-TQZ">
+                                        <rect key="frame" x="0.0" y="83" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qmA-Qa-TQZ" id="ugO-CH-DoA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="textLabel.text" value="Import BIP39 phrase"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="irw-r0-yWk">
+                                        <rect key="frame" x="0.0" y="138" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="irw-r0-yWk" id="nfz-fm-hwx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="textLabel.text" value="Generate key on card"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                    <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="jkG-VB-g5e">
+                                        <rect key="frame" x="0.0" y="193" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jkG-VB-g5e" id="9J8-bT-eyw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="textLabel.text" value="Import EC keypair"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="sDv-Cq-lT5" id="VEG-4g-Ta1"/>
+                            <outlet property="delegate" destination="sDv-Cq-lT5" id="eFo-Pt-hY6"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xs-Uj-WVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="118"/>
+        </scene>
+        <!--CreateBIP39 Controller-->
+        <scene sceneID="Vgz-m9-vPr">
+            <objects>
+                <viewController id="doM-WY-Jir" customClass="CreateBIP39Controller" customModule="KeycardSwiftIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rTu-Sl-rsK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIP39" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2u-Dn-OJn">
+                                <rect key="frame" x="16" y="105" width="343" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="jiA-pp-S5H">
+                                <rect key="frame" x="104" y="162" width="167.5" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-EL-L4r">
+                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qx9-VE-Ri1">
+                                        <rect key="frame" x="124.5" y="0.0" width="43" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyE-g0-0sn">
+                                <rect key="frame" x="115" y="241" width="145" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="pzu-Hv-V0i"/>
+                                    <constraint firstAttribute="width" constant="145" id="qgd-4l-Pp3"/>
+                                </constraints>
+                                <state key="normal" title="Generate phrase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generateButtonPressed:" destination="doM-WY-Jir" eventType="touchUpInside" id="rW4-bh-iob"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m2u-Dn-OJn" firstAttribute="leading" secondItem="qvY-Fa-BzW" secondAttribute="leading" constant="16" id="20I-VD-sMg"/>
+                            <constraint firstItem="m2u-Dn-OJn" firstAttribute="top" secondItem="qvY-Fa-BzW" secondAttribute="top" constant="105" id="88Y-yK-Uh1"/>
+                            <constraint firstItem="TyE-g0-0sn" firstAttribute="top" secondItem="jiA-pp-S5H" secondAttribute="bottom" constant="45" id="BR9-NF-iJm"/>
+                            <constraint firstItem="jiA-pp-S5H" firstAttribute="centerX" secondItem="rTu-Sl-rsK" secondAttribute="centerX" id="MZ3-8X-UJw"/>
+                            <constraint firstItem="qvY-Fa-BzW" firstAttribute="trailing" secondItem="m2u-Dn-OJn" secondAttribute="trailing" constant="16" id="Olu-DO-F3l"/>
+                            <constraint firstItem="TyE-g0-0sn" firstAttribute="centerX" secondItem="rTu-Sl-rsK" secondAttribute="centerX" id="eYF-lg-Ohx"/>
+                            <constraint firstItem="jiA-pp-S5H" firstAttribute="top" secondItem="m2u-Dn-OJn" secondAttribute="bottom" constant="40" id="gm9-JW-kdl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qvY-Fa-BzW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bbO-2z-3PO"/>
+                    <connections>
+                        <outlet property="bip39Label" destination="m2u-Dn-OJn" id="7d0-wQ-ZDg"/>
+                        <outlet property="numberTF" destination="qx9-VE-Ri1" id="RiN-Ya-GG7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56l-kB-2VF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>
