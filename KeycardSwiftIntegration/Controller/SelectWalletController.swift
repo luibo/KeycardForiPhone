@@ -146,18 +146,7 @@ class SelectWalletController: UIViewController {
         for a in accountsFound {
             print(a.address)
         }
-         
-        
-        accountsFound = [(accountsFound[0].path, "0x51faAa755da355f5Ae31582810999720e9b56908"),
-        (accountsFound[1].path, "0xEc85C3309e26F6f2D6777c346401eD95C8a28450"),
-        ("", "0x794f604a9d8b1dccf62865ef60cb00dae048ea04"),
-        ("", "0x4ed1fd8e13db7e08c6fb8f46ffb3752eb3343a2a"),
-        ("", "0x8d5e099a355a048b5926add4a022e9b2ab4434d5"),
-        ("", "0x2f54110df99e55c9624a69b103749b93fdb93f1a"),
-        ("", "0xae38ca6305847d286881109f4d592b985b7fd0dd"),
-        ("", "0xdccba7454da27074442c077d3f7c48aecdd2858c"),
-        ("", "0xbcf3b011d70e4f3595a1767763082db6597f6d21"),
-        ("", "0x830676d6774c76adfb827967434b6847f49fb0f4")]
+
         
         dGroup.enter()
         
